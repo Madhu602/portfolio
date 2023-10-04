@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+          
+        }
+        a{
+            color:white;
+            text-decoration: none;
+        }
+
+        /* Style for the video container */
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Place it behind other content */
+        }
+
+        /* Style for the video element */
+        video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .header {
+            background-color: transparent; /* Make the header transparent */
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative; /* Ensure header is above the video */
+            z-index: 1; /* Place it above the video */
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+            position: relative; /* Ensure content is above the video */
+            z-index: 1; /* Place it above the video */
+        }
+
+        .dp {
+            max-width: 200px;
+            
+            border-radius: 200%;
+            margin-bottom: 10px;
+            margin-top: -50px;
+        }
+
+        .designation {
+            font-style: italic;
+            color: #fff; /* Change text color to white */
+        }
+
+        /* Style for social media icons */
+        .social-links {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+            transition: color 0.3s ease; /* Add transition effect for icon color */
+        }
+
+        .social-links a:hover {
+            color: #0077B5; /* Change color on hover (LinkedIn Blue) */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .box {
+            width: 100%;
+            max-width: 500px;
+            background-color: #e6db9e;
+            margin: 10px;
+            padding: 20px;
+            text-align: left;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .box p:first-child {
+            font-weight: bold;
+        }
+     
+        
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="pexels-niezlyziom-5485144 (1080p).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <header class="header">
+        <h2>Kommu Madhu</h2>
+        <ul class="nav">
+           <h3> <li tyle="color: white;"><a href="#About">About Me</a></li>
+                <li style="color: white;"><a href="#Portfolio">Portfolio</a></li> </h3>
+        </ul>
+    </header>
+    <div class="content">
+        <img src="1695299917914.jpg" alt="Your Name" class="dp">
+        <h1 style="color:white;">Kommu Madhu</h1>
+        <h2 class="designation">Student, Aspiring Software Engineer</h2>
+        
+        <!-- Social Media Links (Font Awesome icons) -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/kommu-madhu-51a38a215" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.twitter.com/@KommuMadhu14474" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://instagram.com/mr_madhu_k05?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kommumadhu602@gmail.com&su=SUBJECT&body=BODY" target="_blank"><i class="fa fa-mail-forward"></i></a>
+            <a href="https://github.com/Madhu602" target="_blank"><i class="fa fa-github"></i></a>
+            <!-- Add more social media links and icons as needed -->
+        </div>
+        
+        <!-- Your content for the first page goes here -->
+        <br><br>
+        
+    </div>
+    
+    
+</body>
+
+<div id="About" style=" background-color: aliceblue;font-weight: 300;font-style: normal;"> <br>
+    <pre>
+    <h3>
+     <p style="font-size: xx-large;margin: 0%;"> Hey!</p>
+<p style="font-size: x-large;">
+       I'm Kommu Madhu from Hyderabad!
+       I love programming, as well as running, taking photos and learning new things!
+       Feel free to get in touch or take a look at my past work below.
+</p>
+</h3>
+    <br>
+</pre>
+</div>
+<br>
+<center>
+<p id="Portfolio" style="font-size: x-large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: #fff;">Portfolio</p>
+</center>
+<br>
+<div style="background-color: #fbfdfd;">
+    <br>
+    <center><p style="font-size: x-large;align-self: center;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Projects</p></center>
+
+     <div class="container">
+        <div class="box">
+            <p>1. Online Voting System</p>
+            <p>An online voting platform allowing eligible citizens to cast their votes remotely with secure authentication and transparent result tabulation. Ensured compliance with legal requirements and data protection measures, enhancing accessibility and efficiency in the electoral process.</p>
+            <button ><a style="color: black;" href="https://github.com/Madhu602">more</a></button>
+        </div>
+
+        <div class="box">
+            <p>2. Fingerprint Door Lock System</p>
+            <p>Developed an Arduino-based project integrating a fingerprint scanner, relay module, and solenoid lock to provide secure access control. Users can register their fingerprints, and successful authentication triggers the solenoid lock to unlock the door, demonstrating proficiency in Arduino programming, electronic interfacing, and biometric authentication.</p>
+            <button ><a style="color: black;" href="https://github.com/Madhu602">more</a></button>
+        </div>
+        <footer class="footer">
+            <p>&copy; 2023 Kommu Madhu</p>
+        </footer>
+    </div>
+   
+    </html>
